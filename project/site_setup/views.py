@@ -6,5 +6,6 @@ def get_site_setup_context(request):
     return {
         'site_setup': {
             'title': dados.title if dados else 'Nenhum título definido',
+            'favicon': dados.favicon if dados else None,
         }
     }
